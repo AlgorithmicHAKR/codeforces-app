@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomePage"
+    tools:showIn="@layout/activity_home_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="35dp"
+            android:drawableRight="@drawable/codeforces_icon"
+            android:gravity="center_horizontal"
+
+            android:textColor="#002984"
+
+            android:textSize="50dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginTop="33dp"
+            android:gravity="center_horizontal"
+
+            android:textColor="#002984"
+
+            android:textSize="50dp"
+
+            />
+
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:layout_below="@+id/ll"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:paddingLeft="23dp"
+        android:id="@+id/userhandle"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="User Handle"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+      <Button
+          android:layout_below="@+id/userhandle"
+          android:layout_width="match_parent"
+          android:layout_marginLeft="26dp"
+          android:layout_height="wrap_content"
+          android:text="GET INFO"
+          android:layout_marginRight="26dp"
+          android:textColor="#ffff"
+          android:background="#002984"
+          android:id="@+id/getinfo"
+          />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:text="Developed by Aman (hakr_2104)"
+        android:textStyle="italic" />
+</RelativeLayout>
